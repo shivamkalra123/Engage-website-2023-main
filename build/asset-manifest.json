@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2b9e7232.css",
+    "main.js": "/static/js/main.d34dab7f.js",
+    "static/media/blockchain.png": "/static/media/blockchain.69d9f7a16e2f3983292b.png",
+    "static/media/NCU_logo_white.png": "/static/media/NCU_logo_white.7641d54f91c9abf0e2a3.png",
+    "static/media/ai.svg": "/static/media/ai.07198ba15ea5325a966b56e389f49826.svg",
+    "static/media/momentum_logo.png": "/static/media/momentum_logo.9747a6fa905948be1171.png",
+    "static/media/open.svg": "/static/media/open.f7b05f9d8cdec0bba84e2140707877c3.svg",
+    "static/media/ar.svg": "/static/media/ar.0fc7de46b3d9a6e1ed5b96b206c6d169.svg",
+    "static/media/cyber.svg": "/static/media/cyber.ddc62c42fb8c189c13889e3080e9d170.svg",
+    "static/media/Replit.png": "/static/media/Replit.d28c3edd35cf8739aced.png",
+    "static/media/Polygon.webp": "/static/media/Polygon.caed2b9d9a397fa1a7b5.webp",
+    "static/media/Devfolio.webp": "/static/media/Devfolio.e39d3c5c9f5372b554f9.webp",
+    "static/media/engagelogo.svg": "/static/media/engagelogo.45ee8e8c570f339f168756af69da2fe5.svg",
+    "index.html": "/index.html",
+    "main.2b9e7232.css.map": "/static/css/main.2b9e7232.css.map",
+    "main.d34dab7f.js.map": "/static/js/main.d34dab7f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b9e7232.css",
+    "static/js/main.d34dab7f.js"
+  ]
+}

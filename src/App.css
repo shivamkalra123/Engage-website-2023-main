@@ -1,0 +1,975 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+body {
+    
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.engage-logo {
+    width: 4.4rem;
+    margin: 0px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 1px;
+    left: 0;
+    right: 0;
+    padding: 30px; /* Reset padding to remove any extra spacing */
+    margin: 0; /* Reset margin to remove any extra spacing */
+}
+
+
+
+.navbar:focus {
+    background-color: #140d24;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 500;
+}
+
+.links div {
+    position: relative;
+}
+
+.links div:active {
+    color: white;
+}
+
+.links a:hover {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.links div::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s;
+
+}
+
+.links div:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar .register-btn,
+.cover-content .register-btn {
+    background-color: transparent;
+    padding: 0.7rem 1.3rem;
+    border: 0.1rem solid white;
+    border-radius: 0.4rem;
+
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    
+
+    transition: all 0.3s;
+}
+
+.cover-content .register-btn{
+    padding: 1rem 1.8rem;
+}
+
+
+
+.navbar .register-btn:hover,
+.cover-content .register-btn:hover {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    background-color: white;
+    color: #140d24;
+}
+
+
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    border-image: linear-gradient(0deg, #ec4899 15%, #9333ea 90%, #4338ca) 30;
+    border-width: 2px;
+    border-style: solid;
+    width: 99%;
+    margin-bottom: 5rem;
+
+    box-shadow: 0 0 0.7rem rgba(255, 255, 255, 0.5);
+}
+
+.countdown-item {
+    font-size: 4em;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .countdown {
+        flex-direction: row;
+        font-size: 5px;
+    
+        /* Center items horizontally */
+    }
+    .countdown-item{
+        z-index: -1;
+    }
+
+}
+
+.countdown-item {
+    margin: 10px;
+    width: 50px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.date {
+    opacity: 0.8;
+    font-size: 5px;
+}
+
+.background {
+    background-color: #1c0d3a;
+    width: 100%
+}
+
+.count {
+    position: relative;
+    margin-top: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.date {
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.cover-content {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 12rem;
+
+}
+
+.navbar.scrolled {
+    background-color: rgb(20, 13, 36,0.7); 
+    padding: 20px;
+    margin: 0;
+    position: fixed;
+ 
+    
+    
+    /* Add the desired background color */
+}
+.navbar.scrolled img{
+    margin-left: 1px;
+
+}
+
+
+.cover-content h1 {
+    font-size: 5.6rem;
+    font-family: 'Montserrat', sans-serif;
+    background: -webkit-linear-gradient(0deg, #ec4899 5%, #9333ea 70%, #4338ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.9rem;
+    margin-top: 170px;
+    font-size: 102px;
+}
+
+.cover-content .subtitle {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+
+.sponsors{
+    width: 90%;
+    background-color: #140d24;
+    margin: auto;
+
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+
+    /* border-radius: 0.2rem; */
+
+    box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+
+}
+
+.sponsors{
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.ncu_logo img {
+    width: 15rem;
+}
+
+.m_logo img {
+    width: 15rem;
+}
+.about{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .left{
+    margin-right: 5rem;
+    padding: 5rem;
+    padding-right: 0;
+}
+
+.about .right{
+    font-size: 1.3rem;
+    padding: 5rem;
+    text-align: left;
+    border-left: 2px solid white;
+}
+
+.about .right span{
+    color: #9333ea;
+    font-weight: 600;
+}
+
+
+.hackathon-info .heading {
+    font-size: 2.5rem;
+    color: rgb(147, 51, 234);
+}
+
+.hackathon-info .text {
+    width: 75%;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.ncu-info,
+.momentum-info {
+    margin-top: 5rem;
+    width: 75%;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    padding: 2rem;
+
+    transition: all 0.15s;
+}
+
+.momentum-info {
+    margin-left: 13em;
+}
+
+.ncu-info .heading,
+.momentum-info .heading {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+#reg_but{
+    display: none;
+}
+.ncu-info .title,
+.momentum-info .title {
+    margin-left: 3rem;
+    font-size: 2rem;
+}
+
+.ncu-info:hover,
+.momentum-info:hover {
+    border-color: rgb(147, 51, 234);
+    box-shadow: 0 0 0.7rem rgba(147, 51, 243, 0.5);
+}
+
+.ncu-info .text,
+.momentum-info .text {
+    text-align: justify;
+}
+
+
+
+
+.sponsors .heading, #tracks .heading, .heading_faq {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.sponsors .temp-sponsors {
+    margin-top: 0.5rem;
+    font-size: 3rem;
+  color: 	#ffd700;
+  
+}
+
+.image_sponsers{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+    
+}
+.silverSponsers::selection{
+    background-color: #9333ea;
+}
+.devfolio{
+    height: 80px;
+    width: 300px;
+    padding: 30px 30px;
+}
+
+
+.silverImages{
+    display: flex;
+    flex-direction: row;
+}
+#diff{
+    
+    width: 300px;
+    height: 150px;
+   
+}
+
+
+.silverSponsers{
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    color: #c0c0c0;
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .temp-sponsors, .silverSponsers {
+        font-size: 2rem;
+    }
+
+    .devfolio {
+        height: 80px;
+        margin: 10px;
+    }
+   
+    .images_sponsers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+        
+    }
+
+   .silverImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+   }
+}
+
+
+#tracks{
+    padding: 1.5rem;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 3rem;
+}
+
+
+.tr{
+    display: flex;
+    justify-content:space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+}
+
+.track-box:hover .track-name{
+    text-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.5);
+}
+
+.tr div{
+    margin: 1.2rem;
+}
+
+.track-img{
+    width: 15rem;
+    margin-bottom: 0;
+}
+
+.track-name{
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+.track-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.head{
+  background-color: #140d24;
+  text-align: center;
+
+  width: 90%;
+  padding: 1.5rem;
+
+  box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.5);
+
+  margin: auto;
+  margin-top: 3rem;
+}
+.faq {
+  background-color: #140d24;
+  padding: 20px;
+  border: 1.5px solid white;
+  margin: 10px;
+  color: white;
+}
+.faq .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  font-size: 0.7rem;
+  text-align: left;
+  font-weight: 300;
+
+}
+.faq-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #140d24;
+  margin-top: 1rem;
+}
+.faq .icon {
+  transition: transform 0.3s;
+}
+.faq .icon.open {
+  transform: rotate(180deg);
+}
+.faq div {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.faq p {
+  font-size: 1rem;
+  display: none;
+}
+.faq.active p {
+  display: block;
+}
+
+.faq.active .question {
+    border-bottom: 2px solid #9333ea;
+}
+
+.faq-tower {
+  width: 45%;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .cover-content h1 {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .cover-content h1 {
+        font-size: 3.2rem;
+        
+    }
+
+    .about .left img{
+        width: 10rem;
+    }
+
+    .about .right{
+        font-size: 1rem;
+    }
+
+
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .about{
+        margin: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .about .left{
+        margin-right: 0;
+        padding: 1rem;
+        padding-right: 0;
+        display: flex;
+        justify-content:space-around;
+    }
+
+    .about .left .ncu_logo{
+        margin-right: 5rem;
+    }
+    
+    .about .right{
+        
+        padding: 2rem;
+        text-align: center;
+        border-left: none;
+        border-top: 2px solid white;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cover-content h1 {
+        font-size: 3.2rem;
+        
+    }
+
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .hackathon-info .text, .ncu-info .text, .momentum-info .text{
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .hackathon-info .heading, .ncu-info .title, .momentum-info .title{
+        font-size: 1.7rem;
+        text-align: center;
+        margin: 0;
+    }
+    .momentum-info {
+        margin-left: 0;
+    }
+
+    .about{
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (max-width: 900px){
+    #tracks .heading{
+        font-size: 2rem;
+    }
+    .momentum-info {
+        margin-left: 0;
+    }
+
+    .about{
+        align-items: center;
+    }
+
+}
+
+/* Add this CSS to your existing styles */
+
+@media (max-width: 769px) {
+    .navbar {
+         /* Set the background color */
+        position: fixed; 
+        width: 100%;
+        top: 20px;
+      
+       
+    }
+
+    .navbar.scrolled {
+        background-color:rgb(128, 0, 128,0.7);
+       
+       
+      
+         /* Keep the background color consistent */
+    }
+
+    .engage-logo img {
+        max-height: 40px; 
+        /* Adjust as needed */
+    }
+   
+    .links  {
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        padding: 50px 0;
+        margin-bottom: 20px;
+        
+     
+        
+       
+       
+    }
+   
+   
+  
+    
+    
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        height: 24px;
+        width: 30px;
+        z-index: 2;
+        margin-left: 290px;
+        position: fixed;
+         /* Added margin for right side */
+       
+    }
+    
+    .bar {
+        background: #ffffff;
+        height: 3px;
+        width: 100%;
+        transition: 0.3s;
+        
+    }
+    
+    .open .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-4px, 6px);
+    }
+    
+    .open .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .open .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-4px, -6px);
+    }
+    
+    .links {
+        display: none;
+    }
+    #reg_1{
+        display: none;
+    }
+    #reg_but{
+        display: block;
+    }
+    .links.open {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(87, 0, 87,0.8);
+        position: absolute;
+        top: 1px;
+        right: -100%; /* Changed from '0' */
+        width: 80%;
+        
+        height: 100%;
+        position: fixed;
+      
+        animation: slideIn 0.5s forwards;
+    }
+    @keyframes slideIn {
+        0% {
+            right: -100%; /* Initial position */
+        }
+        100% {
+            right: 0; /* Final position */
+        }
+    }
+    
+    .open .links {
+        right: 0; /* Ensure the menu is fully visible after transition */
+    }
+    
+    .links div {
+        margin-bottom: 10px;
+        
+    }
+    
+    .links {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.2rem;
+      
+       
+      
+    
+        
+    }
+    
+    .links a:hover {
+        font-weight: bolder;
+    }
+
+ 
+}
+
+
+@media screen and (max-width: 800px){
+   
+
+    .cover-content h1 {
+        font-size: 2.9rem;
+    }
+
+    .cover-content .subtitle{
+        font-size: 1.1rem;
+    }
+
+    .cover-content .register-btn{
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .hackathon-info .heading, .ncu-info .title, .momentum-info .title{
+        font-size: 1.7rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .heading{
+        flex-direction: column;
+    }
+
+    .hackathon-info .text, .ncu-info .text, .momentum-info .text{
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .sponsors .heading{
+        font-size: 2.5rem;
+    }
+
+
+    .sponsors .temp-sponsors{
+        font-size: 3rem;
+    }
+
+    .faq-container{
+        flex-direction: column;
+        
+    }
+
+    .faq-tower{
+        width: 100%;
+    }
+
+    .head{
+        width: 90%;
+    }
+    .momentum-logo {
+        display: none;
+    }
+
+    #tracks .heading{
+        font-size: 2.3rem;
+    }
+
+    .momentum-info {
+        margin-left: 0;
+    }
+
+    .about{
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    footer ul{
+        font-size: 0.7rem;
+    }
+
+    .sponsors .temp-sponsors{
+        font-size: 2.4rem;
+    }
+
+    .cover-content .title{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .cover-content{
+        width: 300px;
+        margin: 7rem auto;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 400px){
+    .cover-content h1 {
+        font-size: 2.9rem;
+    }
+
+    .cover-content .subtitle{
+        font-size: 1.1rem;
+    }
+
+    .cover-content .register-btn{
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .hackathon-info .heading, .ncu-info .title, .momentum-info .title{
+        font-size: 1.7rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .heading{
+        flex-direction: column;
+    }
+
+    .hackathon-info .text, .ncu-info .text, .momentum-info .text{
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .sponsors .heading{
+        font-size: 2.5rem;
+    }
+
+
+    .sponsors .temp-sponsors{
+        font-size: 3rem;
+    }
+
+    .faq-container{
+        flex-direction: column;
+        
+    }
+
+    .faq-tower{
+        width: 100%;
+    }
+
+    .head{
+        width: 90%;
+    }
+
+    #tracks .heading{
+        font-size: 2.3rem;
+    }
+
+    .momentum-info {
+        margin-left: 0;
+    }
+
+    .about{
+        align-items: center;
+    }
+
+    .track-name{
+        text-align: center;
+    }
+
+
+
+}
+
+footer{
+    display: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 16px;
+    padding-bottom: 0;
+
+}
+
+footer a {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    color: #333;
+    transition: border-color 0.3s;
+    color: white;
+    
+    /* margin: 150px; */
+}
+
+footer a:hover {
+    border-color: #ffffff;
+
+}
+.engage-logo,
+.momentum-logo {
+    width: 4.4rem;
+}
+
+.momentum-logo {
+    width: 7rem;
+}
+
