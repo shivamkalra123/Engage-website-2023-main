@@ -1,10 +1,21 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 
-const devfolioButton = () => {
+const DevfolioButton = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+        document.body.removeChild(script);
+    }
+}, []);
+
   return (
  
          <div 
-                className="register-btn1" 
+                className="apply-button" 
                 data-hackathon-slug="engagehackathon2023" 
                 data-button-theme="dark"
                 style={{ height: '40px', width: '212px' }}
@@ -13,4 +24,4 @@ const devfolioButton = () => {
   )
 }
 
-export default devfolioButton
+export default DevfolioButton
