@@ -15,7 +15,7 @@ const Footer = () => {
                     <a href='https://discord.gg/Pnrw4swZnK'>Discord</a>
                 </li>
                 <li>
-                    <a href='#'>Momentum</a>
+                    <a href='https://momentum.ncuindia.edu/'>Momentum</a>
                 </li>
             </ul>
         </footer>
