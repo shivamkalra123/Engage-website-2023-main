@@ -363,11 +363,14 @@ a {
     background-color: #9333ea;
 }
 .devfolio{
-    height: 80px;
-    width: 300px;
+    height: 65px;
+    width: 280px;
     padding: 30px 30px;
 }
-
+.dev-btn{
+    position: relative;
+    margin-top: 20px;
+}
 
 .silverImages{
     display: flex;
@@ -397,7 +400,8 @@ a {
     }
 
     .devfolio {
-        height: 80px;
+        height: 65px;
+        width: 280px ;
         margin: 10px;
     }
    
