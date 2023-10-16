@@ -46,7 +46,7 @@ export default function Nav() {
                 <div><a href="#faq">FAQ</a></div>
                 
             </div>
-            <div><a href="#"><img className="momentum-logo" src={mlogo} alt="logo" /></a></div>
+            <div><a href="https://momentum.ncuindia.edu/"><img className="momentum-logo" src={mlogo} alt="logo" /></a></div>
         </div>
         </div>
     );
