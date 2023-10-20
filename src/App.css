@@ -336,8 +336,6 @@ a {
 }
 
 
-
-
 .sponsors .heading, #tracks .heading, .heading_faq {
     font-size: 3rem;
     font-weight: 600;
@@ -367,6 +365,10 @@ a {
     width: 280px;
     padding: 30px 30px;
 }
+.silver{
+    padding: 10px 5px;
+
+}
 .dev-btn{
     position: relative;
     margin-top: 20px;
@@ -378,8 +380,9 @@ a {
 }
 #diff{
     
-    width: 300px;
-    height: 150px;
+    width: 295px;
+    height: 85px;
+    margin: 20px;
    
 }
 
@@ -388,10 +391,19 @@ a {
     margin-top: 0.5rem;
     font-size: 3rem;
     color: #c0c0c0;
+    
 
 }
 
+@media screen and (min-width: 567px) and (max-width: 1122px){
+    #diff{
+        width: 195px;
+        height: 65px;
+        margin: 10px;
+    }
+       
 
+}
 
 
 @media screen and (max-width: 768px) {
