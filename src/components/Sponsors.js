@@ -35,11 +35,9 @@ export default function Sponsors() {
       </div>
       <div className='communityHeading'>Community Partners</div>
       <div className="silverImages">
-        <a href="https://rosenfeldmedia.com/"><img className="silver" id="diff" src={GDGGGN} alt="ROSENFELD LOGO"></img></a>
-        
-        <a href="https://www.echo3d.com/"><img className="silver" id="diff" src={GDGIEM} alt="ECHO3D LOGO"></img></a>
-        <a href="https://www.stickermule.com/"><img className="silver" id="diff" src={GDGNSUT} alt="STICKERMULE LOGO"></img></a>
-
+        <a href="https://gdg.community.dev/gdg-gurugram/"><img className="silver" id="diff" src={GDGGGN} alt="ROSENFELD LOGO"></img></a>
+        <a href="https://gdsc.community.dev/netaji-subhas-university-of-technology-delhi/"><img className="silver" id="diff" src={GDGNSUT} alt="STICKERMULE LOGO"></img></a>
+        <a href="https://gdsc.community.dev/institute-of-engineering-management-kolkata/"><img className="silver" id="diff" src={GDGIEM} alt="ECHO3D LOGO"></img></a>
 
       </div>
 

@@ -32,7 +32,7 @@ export default function About() {
                 </div>
             </div>
             <div className="right">
-            Momentum, The Northcap University's spirited techno-cultural fest, propels student communities with fervor. Taking place on November 3rd to 4th, Momentum 2023, the 26th Edition, promises two days of dynamic activities. <span>Engage</span>, the university's hackathon, is a standout event, attracting participants from across the country. This annual festival is a vibrant convergence of talent and innovation.
+            The Engage Hackathon stands at the core of our Annual Techno-Cultural fest, Momentum. Through this hackathon, students not only get to showcase their skills but ignite their passion for innovation. They learn from the masters of industry, forge unbreakable bonds, and delve into the boundless realm of creativity and technology. Engage Hackathon, more than an event, is a captivating journey that propels you to push the boundaries, shatter limits, and unite with the brightest minds in the field. Engage 3.0 awaits you, unfolding on November 1st - 2nd, 2023
 
             </div>
 
