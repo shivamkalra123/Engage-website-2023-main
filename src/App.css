@@ -347,7 +347,9 @@ a {
   color: 	#ffd700;
   
 }
-
+.temp-sponsors{
+    text-decoration: underline;
+}
 .image_sponsers{
 
     display: flex;
@@ -361,12 +363,12 @@ a {
     background-color: #9333ea;
 }
 .devfolio{
-    height: 65px;
-    width: 280px;
+    
+    width: 270px;
     padding: 30px 30px;
 }
 .silver{
-    padding: 10px 5px;
+    padding: 20px 5px;
 
 }
 .dev-btn{
@@ -380,25 +382,29 @@ a {
 }
 #diff{
     
-    width: 295px;
-    height: 85px;
+    width: 250px;
+ 
     margin: 20px;
    
 }
-
+.communityHeading{
+    font-size: 36px;
+    text-decoration: underline;
+}
 
 .silverSponsers{
     margin-top: 0.5rem;
     font-size: 3rem;
     color: #c0c0c0;
+    text-decoration: underline;
     
 
 }
 
 @media screen and (min-width: 567px) and (max-width: 1122px){
     #diff{
-        width: 195px;
-        height: 65px;
+        width: 230px;
+       
         margin: 10px;
     }
        
