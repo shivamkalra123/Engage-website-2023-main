@@ -23,7 +23,7 @@ function Sponsors() {
     <div id="Sponsors">
       <AnimatedTitle text="SPONSORS" />
       <div className="sponsors-flex">
-        <div className="sponsorship">
+        {/* <div className="sponsorship">
           <h1 className="silver">Title Sponser</h1>
           <div className="images-sponsors">
             <a
@@ -34,7 +34,7 @@ function Sponsors() {
               <img src={intern} alt="Silver Sponsor 1" />
             </a>
           </div>
-        </div>
+        </div> */}
 
         <div className="sponsorship">
           <h1 className="gold">Gold Sponsors</h1>
