@@ -19,9 +19,9 @@ function App() {
         <section id="about">
           <About />
         </section>
-        <section id="Tracks">
+        {/* <section id="Tracks">
           <Tracks />
-        </section>
+        </section> */}
         <section id="Sponsors">
           <Sponsors />
         </section>
