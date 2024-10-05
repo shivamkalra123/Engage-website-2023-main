@@ -16,7 +16,7 @@ const DevfolioButton = () => {
     <div className="dev-btn">
       <div
         className="apply-button"
-        data-hackathon-slug="engage4"
+        data-hackathon-slug="engage2024"
         data-button-theme="dark"
         style={{ height: "40px", width: "212px" }}
       ></div>
