@@ -7,7 +7,7 @@ import devfolio from "../assets/devfolio.png";
 import poly from "../assets/poly.png";
 import eth from "../assets/ethindia-dark.png";
 import woldram from "../assets/woldram.png";
-import intern from "../assets/internshala.png";
+// import intern from "../assets/internshala.png";
 import bee from "../assets/bee.png";
 import sticker from "../assets/sticker.png";
 import echo from "../assets/echo.png";
