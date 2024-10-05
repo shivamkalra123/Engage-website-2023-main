@@ -12,16 +12,16 @@ import StarfieldBackground from "./Components/StarfieldBackground"; // Ensure co
 function App() {
   return (
     <div className="App">
-      {/* <StarfieldBackground /> */}
+      <StarfieldBackground />
       <Header />
       <main>
         <Home />
         <section id="about">
           <About />
         </section>
-        {/* <section id="Tracks">
+        <section id="Tracks">
           <Tracks />
-        </section> */}
+        </section>
         <section id="Sponsors">
           <Sponsors />
         </section>
