@@ -8,14 +8,7 @@ import poly from "../assets/poly.png";
 import eth from "../assets/ethindia-dark.png";
 import woldram from "../assets/woldram.png";
 // import intern from "../assets/internshala.png";
-import bee from "../assets/bee.png";
-import sticker from "../assets/sticker.png";
-import echo from "../assets/echo.png";
-import rosen from "../assets/rosen.webp";
-import replit from "../assets/replit.png";
-import gdsc1 from "../assets/gdsc1.png";
-import gdg from "../assets/gdg.png";
-import gdscncut from "../assets/gdscncut.png";
+
 import interS from "../assets/internshala-student.jpg";
 
 function Sponsors() {
