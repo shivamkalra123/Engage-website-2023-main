@@ -83,7 +83,9 @@ const FAQ = () => {
   return (
     <section className="faq">
       <div className="container">
-        <div className="section-title"></div>
+        <div className="section-title">
+          <AnimatedTitle text="FAQ's" />
+        </div>
         <div className="faq-content">
           <FAQSection
             title="Registration & Event Details"
