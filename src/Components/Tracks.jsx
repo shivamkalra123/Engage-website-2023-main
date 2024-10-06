@@ -1,11 +1,9 @@
 import React from "react";
 import "./Tracks.css";
-import AnimatedTitle from "./AnimatedTitle";
 
 function Tracks() {
   return (
     <div id="Tracks">
-      <AnimatedTitle text="TRACKS" />
       {/* <div className="images">
         <div className="tracks">
           <img src={blockchain1} alt="Web3 and Blockchain" />

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Sponsors.css";
-import AnimatedTitle from "./AnimatedTitle";
 
 // Import sponsor images from assets
 import devfolio from "../assets/devfolio.png";
@@ -14,7 +13,7 @@ import interS from "../assets/internshala-student.jpg";
 function Sponsors() {
   return (
     <div id="Sponsors">
-      <AnimatedTitle text="SPONSORS" />
+      {/* <AnimatedTitle text="SPONSORS" /> */}
       <div className="sponsors-flex">
         {/* <div className="sponsorship">
           <h1 className="silver">Title Sponser</h1>
