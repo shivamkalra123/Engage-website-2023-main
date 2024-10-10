@@ -3,7 +3,6 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react()],
-  publicDir: "public",
   publicDir: "public", // Directory for static assets
   build: {
     outDir: "dist", // Specify the output directory
