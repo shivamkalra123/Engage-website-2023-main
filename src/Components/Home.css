@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.section {  
+    padding: 0 20px; /* Add some padding for smaller screens */
+    font-family: 'Orbitron', sans-serif;
+    color: #1F51FF;
+    overflow: hidden;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 40px; /* Reduce gap for better spacing on smaller screens */
+}
+
+.text-main-home{
+    margin-top: 70px;
+}
+
+h1.main-title, .tagline {
+    font-size: 5em; /* Default size for larger screens */
+    text-align: center;
+    color: #1F51FF;
+    position: relative;
+    margin: 0;
+    animation: glitch-animation 1.5s infinite;
+}
+
+.tagline {
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    h1.main-title {
+        font-size: 4em; /* Adjust size for tablets */
+    }
+
+    .tagline {
+        font-size: 1.5em; /* Adjust size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    h1.main-title {
+        font-size: 3em; /* Adjust size for smaller screens */
+    }
+
+    .tagline {
+        font-size: 1.2em; /* Adjust size for smaller screens */
+    }
+    
+    .section {
+        gap: 30px; /* Reduce gap further on small screens */
+    }
+}
+
+@media (max-width: 500px) {
+    h1.main-title {
+        font-size: 5em; /* Adjust size for mobile screens */
+    }
+
+    .tagline {
+        font-size: 2em; /* Adjust size for mobile screens */
+    }
+    
+    .section {
+        gap: 20px; /* Reduce gap further for mobile */
+    }
+    .text-main-home{
+        margin-top: 80px;
+    }
+}
+
+/* Glitch Effect Keyframes */
+@keyframes glitch-animation {
+    0% {
+        transform: translate(0);
+        opacity: 1;
+    }
+    10% {
+        opacity: 0.9;
+    }
+    20% {
+        opacity: 0.7;
+    }
+    30% {
+        opacity: 0.9;
+    }
+    40% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0.9;
+    }
+    70% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.9;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Clean Glitch Effect Styling */
+h1.main-title::before, 
+.tagline::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #1F51FF;
+    background: rgba(0, 0, 0, 0.5);
+    clip-path: inset(0);
+    z-index: -1;
+    animation: glitch-clip 2.5s infinite;
+}
+
+@keyframes glitch-clip {
+    0% {
+        clip-path: inset(0);
+    }
+    20% {
+        clip-path: inset(0 0 0 2%);
+    }
+    40% {
+        clip-path: inset(0 2% 0 0);
+    }
+    60% {
+        clip-path: inset(2% 0 0 0);
+    }
+    80% {
+        clip-path: inset(0 0 2% 0);
+    }
+    100% {
+        clip-path: inset(0);
+    }
+}
