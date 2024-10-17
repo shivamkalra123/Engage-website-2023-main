@@ -47,7 +47,7 @@ const FAQ = () => {
   ];
 
   const participationAndVenue = [
-    { question: "What are the rules on the Team Size?", answer: "You can participate as an individual or a team of up to 6 members." },
+    { question: "What are the rules on the Team Size?", answer: "You can participate as an individual or a team of up to 5 members." },
     { question: "What's in it for participants?", answer: "Goodies & swag, learning new skills, networking, winning cash prizes, community building, teamwork, meeting wonderful people, having fun, and much more!" },
     { question: "What is the venue for the event?", answer: "The offline hackathon will be held at The North Cap University. Further details will be shared with you via email." },
   ];
