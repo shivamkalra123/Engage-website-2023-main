@@ -4,7 +4,7 @@ import Countdown from "./Countdown";
 import DevfolioButton from "./DevfolioButton";
 
 const Home = () => {
-  const targetDate = "Oct 21, 2024 23:59:59";
+  // const targetDate = "Oct 21, 2024 23:59:59";
 
   return (
     <div className="home">
@@ -14,7 +14,7 @@ const Home = () => {
           <h3 className="tagline">Hack · Engage · Build</h3>
         </div>
         <DevfolioButton />
-        <Countdown targetDate={targetDate} />
+{/*         <Countdown targetDate={targetDate} /> */}
       </section>
     </div>
   );
