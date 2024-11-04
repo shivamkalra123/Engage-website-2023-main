@@ -1,6 +1,6 @@
 import React from "react";
-import "./Winners.css";
-import trophy from "../assets/trophy.png"; // Assuming you have multiple trophy images
+import "./winners.css";
+
 import ehlogo from "../assets/ehlogo.svg";
 
 import first from "../assets/first.jpg";
