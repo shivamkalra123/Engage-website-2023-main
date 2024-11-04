@@ -16,24 +16,30 @@ const Winners = () => {
         <h4 className="winners">Congratulations to all the Winners</h4>
         <div className="cards-container">
           <div className="card">
-            <img src={first} alt="Winner 1" />
-            <div className="overlay">
-              <span className="overlay-text">Winner 1</span>
-            </div>
+            <a href="https://devfolio.co/projects/flick-0945">
+              <img src={first} alt="Winner 1" />
+              <div className="overlay">
+                <span className="overlay-text">Hacktopians</span>
+              </div>
+            </a>
           </div>
           <div className="card raised">
-            {" "}
-            {/* Add the 'raised' class here */}
-            <img src={second} alt="Winner 2" />
-            <div className="overlay">
-              <span className="overlay-text">Winner 2</span>
-            </div>
+            <a href="https://devfolio.co/projects/kisan-sathi-a6d7">
+              {" "}
+              {/* Add the 'raised' class here */}
+              <img src={second} alt="Winner 2" />
+              <div className="overlay">
+                <span className="overlay-text">Agritech Architects</span>
+              </div>
+            </a>
           </div>
           <div className="card">
-            <img src={third} alt="Winner 3" />
-            <div className="overlay">
-              <span className="overlay-text">Winner 3</span>
-            </div>
+            <a href="https://devfolio.co/projects/facemed-e7cf">
+              <img src={third} alt="Winner 3" />
+              <div className="overlay">
+                <span className="overlay-text">CyberDawgs</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
