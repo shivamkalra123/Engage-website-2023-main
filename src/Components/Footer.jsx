@@ -16,7 +16,7 @@ function Footer() {
           </a>
         </li>
         <li>
-          <a href="https://discord.com/invite/Pnrw4swZnK" target="_blank" rel="noopener noreferrer">
+          <a href="https://discord.gg/NBSyFReNWH" target="_blank" rel="noopener noreferrer">
             Discord
           </a>
         </li>
