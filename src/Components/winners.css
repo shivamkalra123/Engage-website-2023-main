@@ -1,0 +1,61 @@
+.container {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  flex-direction: column; /* Stack elements vertically */
+}
+.ehlogo {
+  width: 80px;
+}
+.winners {
+  font-size: 2rem; /* Adjust font size as needed */
+  text-align: center; /* Center text alignment */
+  margin: 20px 0; /* Add space above and below the title */
+}
+
+.cards-container {
+  display: flex; /* Use flexbox for cards layout */
+  justify-content: center; /* Center cards horizontally */
+  gap: 20px; /* Space between cards */
+}
+
+.card {
+  position: relative; /* Position relative for absolute positioning of overlay */
+  width: 400px; /* Set a fixed width for the cards */
+  height: 250px; /* Set a fixed height for the cards */
+  overflow: hidden; /* Hide overflow for card borders */
+}
+
+.card img {
+  width: 100%; /* Image fills the card */
+  height: 100%; /* Image fills the card */
+  transition: opacity 0.3s; /* Smooth transition for the image */
+}
+
+.overlay {
+  position: absolute; /* Overlay covers the entire card */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  display: flex; /* Use flexbox for centering overlay text */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s; /* Smooth transition for the overlay */
+}
+
+.card:hover img {
+  opacity: 0.8; /* Slightly fade the image on hover */
+}
+
+.card:hover .overlay {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.overlay-text {
+  color: white; /* White text color */
+  font-size: 1.5rem; /* Font size for the overlay text */
+}

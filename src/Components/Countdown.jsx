@@ -1,27 +1,39 @@
-import React, { useState, useEffect } from 'react';
-import './Count.css'; // Import the CSS file
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
+import "./Count.css"; // Import the CSS file
 
 const Countdown = ({ targetDate }) => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
   const calculateTimeRemaining = () => {
     const now = new Date();
     const target = new Date(targetDate);
     const total = target - now;
     const days = Math.floor(total / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((total % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const hours = Math.floor(
+      (total % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
     const minutes = Math.floor((total % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((total % (1000 * 60)) / 1000);
-    return { days, hours, minutes, seconds };
+    return { total, days, hours, minutes, seconds };
   };
 
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTimeRemaining(calculateTimeRemaining());
+      const updatedTimeRemaining = calculateTimeRemaining();
+      setTimeRemaining(updatedTimeRemaining);
+
+      // Check if time is up
+      if (updatedTimeRemaining.total <= 0) {
+        clearInterval(interval);
+        navigate("/another-page"); // Navigate to AnotherPage
+      }
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [navigate]); // Include navigate in dependencies
 
   const { days, hours, minutes, seconds } = timeRemaining;
 

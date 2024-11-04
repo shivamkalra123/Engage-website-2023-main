@@ -4,7 +4,7 @@ import Countdown from "./Countdown";
 import DevfolioButton from "./DevfolioButton";
 
 const Home = () => {
-  // const targetDate = "Oct 21, 2024 23:59:59";
+  const targetDate = new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString();
 
   return (
     <div className="home">
@@ -14,7 +14,8 @@ const Home = () => {
           <h3 className="tagline">Hack · Engage · Build</h3>
         </div>
         <DevfolioButton />
-{/*         <Countdown targetDate={targetDate} /> */}
+        <h1>Results Would be announced in :</h1>
+        <Countdown targetDate={targetDate} />
       </section>
     </div>
   );
