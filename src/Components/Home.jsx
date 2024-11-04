@@ -3,9 +3,10 @@ import "./Home.css";
 import Countdown from "./Countdown";
 import DevfolioButton from "./DevfolioButton";
 
-const Home = () => {
-  const targetDate = new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString();
+// Set target time for 4 hours from now
+// const fixedTargetTime = new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString();
 
+const Home = () => {
   return (
     <div className="home">
       <section className="section">
@@ -14,8 +15,8 @@ const Home = () => {
           <h3 className="tagline">Hack · Engage · Build</h3>
         </div>
         <DevfolioButton />
-        <h1>Results Would be announced in :</h1>
-        <Countdown targetDate={targetDate} />
+        <h1>Results Will be Announced In:</h1>
+        <Countdown />
       </section>
     </div>
   );
