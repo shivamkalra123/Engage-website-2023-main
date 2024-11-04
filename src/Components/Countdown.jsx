@@ -1,13 +1,26 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import "./Count.css"; // Import the CSS file
+import { useNavigate } from "react-router-dom";
+import "./Count.css";
 
-const Countdown = ({ targetDate }) => {
-  const navigate = useNavigate(); // Initialize useNavigate
+const Countdown = () => {
+  const navigate = useNavigate();
 
-  const calculateTimeRemaining = () => {
+  const getTargetDate = () => {
+    // Check if there's already a target date in localStorage
+    const savedTargetDate = localStorage.getItem("targetDate");
+
+    if (savedTargetDate) {
+      return new Date(savedTargetDate);
+    } else {
+      // Set a new target date 3 hours from now and save it to localStorage
+      const targetDate = new Date(Date.now() + 3 * 60 * 60 * 1000);
+      localStorage.setItem("targetDate", targetDate.toISOString());
+      return targetDate;
+    }
+  };
+
+  const calculateTimeRemaining = (target) => {
     const now = new Date();
-    const target = new Date(targetDate);
     const total = target - now;
     const days = Math.floor(total / (1000 * 60 * 60 * 24));
     const hours = Math.floor(
@@ -18,22 +31,25 @@ const Countdown = ({ targetDate }) => {
     return { total, days, hours, minutes, seconds };
   };
 
-  const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
+  const targetDate = getTargetDate();
+  const [timeRemaining, setTimeRemaining] = useState(
+    calculateTimeRemaining(targetDate)
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const updatedTimeRemaining = calculateTimeRemaining();
+      const updatedTimeRemaining = calculateTimeRemaining(targetDate);
       setTimeRemaining(updatedTimeRemaining);
 
-      // Check if time is up
       if (updatedTimeRemaining.total <= 0) {
         clearInterval(interval);
-        navigate("/another-page"); // Navigate to AnotherPage
+        localStorage.removeItem("targetDate"); // Clear target date after countdown ends
+        navigate("/another-page");
       }
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [navigate]); // Include navigate in dependencies
+  }, [navigate, targetDate]);
 
   const { days, hours, minutes, seconds } = timeRemaining;
 
