@@ -18,8 +18,7 @@ function App() {
       {/* <Header /> */}
       <main>
         <Routes>
-          <Route path="/" element={<Home />} /> {/* Route for Home */}
-          <Route path="/another-page" element={<AnotherPage />} />{" "}
+          <Route path="/" element={<AnotherPage />} /> {/* Route for Home */}
         </Routes>
 
         {/* <section id="about">
